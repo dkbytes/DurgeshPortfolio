@@ -53,8 +53,8 @@ section {
 }
 
 .contact-img {
-    max-width: 100px; /* Passport-sized width */
-    height: 100px;
+    max-width: 150px; /* Passport-sized width */
+    height: 150px;
     border-radius: 50%; /* Circular shape */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a professional touch */
