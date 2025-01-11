@@ -3,13 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Durgesh Maurya</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background: #444;
+            padding: 0.5rem;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .project {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Durgesh Maurya</h1>
-        <p>Software Engineer</p>
+        <p>Software Developer | 5G R&D | Jio Platforms Limited</p>
     </header>
 
     <nav>
@@ -17,55 +101,83 @@
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
-			<li><a href="#project">About</a></li>
-            <li><a href="#company">Portfolio</a></li>
-            <li><a href="#college">Contact</a></li>
+            <li><a href="#technical-skills">Technical Skills</a></li>
         </ul>
     </nav>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I’m Durgesh Maurya, a passionate web developer with experience in creating dynamic and responsive websites.
-		I am a skilled and results-driven professional with extensive experience in designing, developing, and optimizing enterprise systems and APIs. 
-		My expertise lies in implementing CRUD operations across scalable architectures while leveraging technologies 
-		like Hadoop and Kafka for efficient data management and real-time processing.</p>
+        <p>Hello! I’m Durgesh Maurya, a passionate and results-driven software engineer specializing in enterprise systems and API development. With extensive experience in designing scalable architectures, I excel in:
+        </p>
+        <ul>
+            <li>Implementing CRUD operations across distributed systems</li>
+            <li>Working with technologies like Hadoop and Kafka for efficient data management</li>
+            <li>Optimizing workflows for high-performance, real-time data processing</li>
+        </ul>
     </section>
 
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <h4>Description of JBIS Project.</h4>
-			<p>Designed and developed various APIs to facilitate seamless CRUD operations across multiple systems.
-Ensured high performance and scalability by optimizing API endpoints for minimal latency and maximum throughput.
-Implemented solutions for automated invoice creation, including tax calculation, discounts, and payment processing.
 
-Designed and implemented Kafka producers and consumers for real-time data streaming and processing.
-Played a key role in the development, testing, and production support of various systems.
-Led the design and execution of manual and automated test cases.
-Provided continuous production support, troubleshooting issues, performing root cause analysis, and implementing timely fixes.
-Utilized Postman and other testing tools to conduct thorough API testing.
-Assisted in monitoring system health and conducted performance testing using tools like WRK.</p>
-        </div>
         <div class="project">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project 2</h3>
-            <h4>Description of Hadoop Project.</h4>
-			<p>Successfully deployed Hadoop 3.3.6 clusters in both single-node and multi-node configurations to manage large-scale document storage and processing.
-Developed and optimized workflows for document ingestion, indexing, and retrieval, ensuring efficient handling of terabytes of data.
-Leveraged HDFS for distributed storage, and ensured high availability and fault tolerance.</p>
+            <img src="project1.jpg" alt="JBIS Project">
+            <h3>JBIS Project</h3>
+            <p><strong>Description:</strong> Designed and developed multiple APIs to enable seamless CRUD operations across systems. Highlights include:
+                <ul>
+                    <li>Optimized API endpoints for minimal latency and high throughput</li>
+                    <li>Automated invoice creation with tax, discounts, and payment integration</li>
+                    <li>Developed Kafka producers/consumers for real-time streaming</li>
+                    <li>Performed thorough testing using Postman and WRK tools</li>
+                </ul>
+            </p>
         </div>
+
+        <div class="project">
+            <img src="project2.jpg" alt="Hadoop Project">
+            <h3>Hadoop Project</h3>
+            <p><strong>Description:</strong> Successfully deployed Hadoop 3.3.6 clusters for large-scale document storage and processing. Highlights include:
+                <ul>
+                    <li>Managed terabytes of data using HDFS for distributed storage</li>
+                    <li>Designed workflows for efficient document ingestion and retrieval</li>
+                    <li>Ensured high availability and fault tolerance in multi-node clusters</li>
+                </ul>
+            </p>
+        </div>
+    </section>
+
+    <section id="technical-skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>API</li>
+            <li>C</li>
+            <li>Spring</li>
+            <li>CSS</li>
+            <li>Data Structure</li>
+            <li>DBMS</li>
+            <li>Docker</li>
+            <li>Elastic Search</li>
+            <li>Git</li>
+            <li>Hadoop (HDFS)</li>
+            <li>HTML</li>
+            <li>Java</li>
+            <li>Kafka</li>
+            <li>Linux</li>
+            <li>MySQL</li>
+            <li>Performance Testing</li>
+            <li>Postman</li>
+            <li>Restful API</li>
+            <li>SQL</li>
+        </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: dkbytes7@gmail.com</p>
-        <p>Phone: 8726928378</p>
+        <p>Email: <a href="mailto:dkbytes7@gmail.com">dkbytes7@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918726928378">+91 8726928378</a></p>
     </section>
 
     <footer>
-        <p>© 2025 Durgesh. All Rights Reserved.</p>
+        <p>&copy; 2025 Durgesh Maurya. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
