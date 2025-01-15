@@ -1,0 +1,247 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 5px 0 0;
+}
+
+/* Navigation Styles */
+nav {
+    background: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Section Styles */
+section {
+    padding: 30px 15px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* About Section */
+.about p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.about ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    font-size: 1.4rem;
+    color: #4CAF50;
+}
+
+.project p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.project ul {
+    margin: 10px 0 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Skills Section */
+#technical-skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+#technical-skills ul li {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-img {
+    width: 150px; /* Small size for a professional look */
+    height: 150px;
+    border-radius: 50%; /* Ensures the image is circular */
+    object-fit: cover; /* Avoids distortion */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    border: 3px solid #4CAF50; /* Highlight with primary color border */
+    display: block;
+    margin: 20px auto; /* Centers the image */
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2E7D32;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .project h3 {
+        font-size: 1.2rem;
+    }
+
+    .project p,
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    #technical-skills ul li {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .contact-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.8rem;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    .project h3 {
+        font-size: 1rem;
+    }
+
+    .project p,
+    .about p {
+        font-size: 0.8rem;
+    }
+
+    #technical-skills ul li {
+        font-size: 0.7rem;
+    }
+
+    .contact-img {
+        width: 100px;
+        height: 100px;
+    }
+}
